@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="jquery-2.2.4.js"></script>
+    <meta charset="utf-8">
+    <title>Exercice 1</title>
+  </head>
+  <body>
+    <!-- Ajout d'un formulaire avec un bouton et un champ de texte -->
+    <form>
+      <button type="button" name="button" id="button">Appuyez !</button>
+      <input type="text" name="stat" id="stat" value="">
+    </form>
+    <script>
+    // Déclaration de variable à zéro pour compter le nombre de clique
+      var result = 0;
+    // Ajout d'un click sur le bouton qui incrémante notre variable résult et change en conséquence la valeur du champs de texte
+      $('button').click(function(){
+        result ++;
+        $('#stat').val('Vous avez cliqué '+result+' fois !')
+      })
+    </script>
+  </body>
+</html>
